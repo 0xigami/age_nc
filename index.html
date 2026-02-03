@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>age.nc</title>
+  <meta name="description" content="cultivating agency" />
+
+  <!-- Favicon (replace href with your actual path) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Open Graph / Twitter Card (replace placeholder URLs if needed) -->
+  <meta property="og:site_name" content="age.nc" />
+  <meta property="og:title" content="age.nc" />
+  <meta property="og:description" content="cultivating agency" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://age.nc/" />
+  <meta property="og:image" content="https://age.nc/preview.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="age.nc" />
+  <meta name="twitter:description" content="cultivating agency" />
+  <meta name="twitter:image" content="https://age.nc/preview.png" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0000FF;
+      --fg: #FFFFFF;
+      --pad: 16px;
+      --corner-size: clamp(18px, 3.8vw, 28px);
+      --body-size: clamp(16px, 3.5vw, 22px);
+      --max-width: 70ch;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "VT323", monospace;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    a {
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    .frame {
+      min-height: 100svh;
+      position: relative;
+      padding: var(--pad);
+    }
+
+    .corner {
+      position: absolute;
+      font-size: var(--corner-size);
+      line-height: 1;
+      white-space: nowrap;
+      padding: var(--pad);
+    }
+
+    .tl { top: 0; left: 0; }
+    .tr { top: 0; right: 0; text-align: right; }
+    .bl { bottom: 0; left: 0; }
+    .br { bottom: 0; right: 0; text-align: right; }
+
+    .center {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: calc(var(--pad) * 3);
+    }
+
+    .manifesto {
+      width: min(100%, var(--max-width));
+      font-size: var(--body-size);
+      line-height: 1.25;
+    }
+
+    @media (max-width: 480px) {
+      :root { --pad: 12px; }
+      .center { padding: 72px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="frame" role="main" aria-label="age.nc">
+    <div class="corner tl">age.nc</div>
+    <div class="corner tr">cultivating agency</div>
+
+    <div class="center">
+      <div class="manifesto">
+        <p>
+          we live in a time where work is easy and meaning is not. machines move faster.
+          systems decide sooner. it becomes tempting to drift and let things be done for us.
+          this is how capability is lost
+        </p>
+        <p>
+          agency is not a belief. it is a practice. it is choosing, acting, and owning the outcome.
+          it is understanding the tools you use and the systems you move through. it is staying
+          present when delegation is cheap and responsibility is not
+        </p>
+        <p>
+          use automation without surrender. build leverage without losing judgment. remain
+          accountable for what you set in motion. strength comes from participation, not comfort
+        </p>
+        <p>
+          maximize agency
+        </p>
+      </div>
+    </div>
+
+    <div class="corner bl">
+      <a href="https://x.com/age_nc" target="_blank" rel="noopener noreferrer">@age_nc</a>
+    </div>
+    <div class="corner br">
+      <a href="mailto:gm@age.nc">gm@age.nc</a>
+    </div>
+  </main>
+</body>
+</html>
