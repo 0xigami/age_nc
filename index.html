@@ -33,7 +33,6 @@
       --bg: #0000FF;
       --fg: #FFFFFF;
       --pad: 16px;
-      --corner-size: clamp(18px, 3.8vw, 28px);
       --body-size: clamp(16px, 3.5vw, 22px);
       --max-width: 70ch;
     }
@@ -62,11 +61,12 @@
 
     .corner {
       position: absolute;
-      font-size: var(--corner-size);
-      line-height: 1;
+      font-size: var(--body-size);
+      line-height: 1.25;
       white-space: nowrap;
       padding: var(--pad);
     }
+
 
     .tl { top: 0; left: 0; }
     .tr { top: 0; right: 0; text-align: right; }
